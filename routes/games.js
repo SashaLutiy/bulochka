@@ -11,7 +11,6 @@ gamesRouter.get("/games/:id", findGameById, sendGameById);
 gamesRouter.post(
     "/games",
     findAllGames,
-    checkIsVoteRequest,
     checkIsGameExists,
     checkIfCategoriesAvaliable,
     checkEmptyFields,
